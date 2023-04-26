@@ -52,35 +52,16 @@ body {
   --header-logo-width: 100%;
 }
 
-/* the only bit applied to the whole body */
+/* the only bit applied to the whole body - you might need to change this */
 
 body {
-  box-sizing: border-box;
   margin: 0;
-}
-
-/* Accessibility */
-
-.visually-hidden {
-  position: absolute !important;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
-  width: 1px;
-  height: 1px;
-  word-wrap: normal;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   body {
     scroll-behavior: auto;
   }
-}
-
-header,
-footer {
-  font-family: var(--font-primary);
-  font-size: var(--font-size);
-  scroll-behavior: smooth;
 }
 
 *,
@@ -90,16 +71,17 @@ footer {
   margin-top: 0;
 }
 
-nav ul li a {
-  display: block;
-}
+/* Accessibility */
 
-a {
-  display: inline-block;
-  transition: var(--transition-time);
+header .visually-hidden,
+footer .visually-hidden {
+  position: absolute !important;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  word-wrap: normal;
 }
-
-/* Hover and focus states */
 
 header a:hover,
 footer a:hover {
@@ -116,11 +98,24 @@ footer a:not(.toolbara):focus {
   box-shadow: 0 -2px var(--color-focus), 0 4px var(--color-black);
 }
 
-/* p,
-ul {
-  margin-bottom: var(--vertical-rhythm-spacing);
-} */
-ul ul {
+header,
+footer {
+  font-family: var(--font-primary);
+  font-size: var(--font-size);
+  scroll-behavior: smooth;
+}
+
+footer nav ul li a {
+  display: block;
+}
+
+header a,
+footer a {
+  display: inline-block;
+  transition: var(--transition-time);
+}
+
+footer ul ul {
   margin-bottom: 0;
 }
 .lgd-container {
