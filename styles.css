@@ -98,15 +98,13 @@ footer a:not(.toolbara):focus {
   box-shadow: 0 -2px var(--color-focus), 0 4px var(--color-black);
 }
 
+/* General LGD styles */
+
 header,
 footer {
   font-family: var(--font-primary);
   font-size: var(--font-size);
   scroll-behavior: smooth;
-}
-
-footer nav ul li a {
-  display: block;
 }
 
 header a,
@@ -115,9 +113,6 @@ footer a {
   transition: var(--transition-time);
 }
 
-footer ul ul {
-  margin-bottom: 0;
-}
 .lgd-container {
   max-width: var(--width-container);
   margin-right: auto;
@@ -264,6 +259,14 @@ footer ul ul {
 }
 
 /* Footer */
+
+footer nav ul li a {
+  display: block;
+}
+
+footer ul ul {
+  margin-bottom: 0;
+}
 
 .lgd-footer {
   margin-top: clamp(1rem, 10vw, var(--section-spacing-vertical-footer));
