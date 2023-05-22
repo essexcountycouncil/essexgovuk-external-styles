@@ -371,7 +371,7 @@ input[type=text]:focus {
 
 /* Hover and focus states for all links - might not be suitable everywhere */
 
-a:hover {
+a:not(.toolbara):hover {
   text-decoration-thickness: max(3px, 0.1875rem, 0.12em);
 }
 a:not(.toolbara):focus {
